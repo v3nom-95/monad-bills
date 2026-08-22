@@ -1,0 +1,18 @@
+# Third-party clone of getlago/lago — has its own .git, its own submodules, and
+# a .env with live secrets. Reproducible from the public repo; see README.
+lago/
+
+# Backend-local skill roots. These are derived copies of .agents/skills/ (real
+# directory copies on Windows, not symlinks). .opencode/ also carries its own
+# node_modules. .agents/skills/ is the tracked source of truth.
+.claude/
+.opencode/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor noise
+Thumbs.db
+.DS_Store
